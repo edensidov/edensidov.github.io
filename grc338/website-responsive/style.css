@@ -105,7 +105,7 @@ nav ul li {
 	font-weight: bold;
 	font-size: 25px;
 	font-family: sans-serif;
-	margin: 2em 0.5em 2em;
+	margin: 1em 0.5em 2em;
 	display: inline-block;
 	}
 
@@ -117,7 +117,7 @@ nav ul li.selected a {
 nav ul li a {
 	background:rgb(1,0,245);
 	color: rgb(249, 248, 86);
-	padding: 0.6em 0.5em 0.2em;
+	padding: 0.5em 0.5em 0.2em;
 	text-decoration: none;
 	}
 
