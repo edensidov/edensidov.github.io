@@ -88,9 +88,12 @@ p.price {
 	margin: 0;
 	}
 
+ul li {
+	list-style-type: none;
+}
+
 nav ul  {
 	text-align: right;
-
 	}
 	
 nav ul li {
@@ -105,17 +108,17 @@ nav ul li.selected a {
 	}
 
 nav ul li a {
-	background-color:rgb(1,0,245);
+	background-color:rgb(0,0,255);
 	color: rgb(255, 255, 0);
 	text-decoration: none;
 	padding: 0.5em 0.5em 0.2em;
 	}
 
 article {
-	background-color: rgb(117,251,253);
+	background-color: rgb(3,255,255);
 	max-width: 32em;
 	margin: auto;
-		}
+}
 
 p.slogan {
 	font-size: 4em;
