@@ -32,7 +32,7 @@ header {
 	display:grid;
 	grid-template-columns: 1fr 1fr;
 	background: rgb(204,204,204);
-	padding: 1em 0.5em 0em;
+	padding: 1em 1em 0em;
 	}
 
 h1 {
@@ -83,7 +83,8 @@ main.menu ul li {
 }	
 
 p {
-	margin: 1em 0em 1em;
+	margin: 1em 0em 0.5em;
+	line-height:1em;
 	}
 	
 p.description {
@@ -104,7 +105,7 @@ nav ul li {
 	font-weight: bold;
 	font-size: 25px;
 	font-family: sans-serif;
-	margin: 2em 1em 3em;
+	margin: 2em 0.5em 2em;
 	display: inline-block;
 	}
 
@@ -116,7 +117,7 @@ nav ul li.selected a {
 nav ul li a {
 	background:rgb(1,0,245);
 	color: rgb(249, 248, 86);
-	padding: 0.5em 0.5em 0.5em;
+	padding: 0.6em 0.5em 0.2em;
 	text-decoration: none;
 	}
 
@@ -134,8 +135,8 @@ p.slogan {
 	font-size: 4em;
 	font-family: serif;
 	font-style: italic;
-	margin: 1em 0em 5em;
-	color: rgb(255,255,255);	
+	margin: 1em 0em 2em;
+	color: rgb(255,255,255);
 	}
 	
 footer {
@@ -150,6 +151,7 @@ footer {
 
 address {
 	color: rgb(239, 142, 52);
+	line-height: 1.3em;
 }
 
 footer p {
