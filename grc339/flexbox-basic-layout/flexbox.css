@@ -5,7 +5,6 @@ body {
     color: #222;
     background-color: #fafafa;
     box-sizing: border-box;
-	font-size: 1.2em;
 }
 img {
     width: 100%;
@@ -20,19 +19,20 @@ div.container {
 }
 header { 
     flex: 1 0 100%;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 article {
-    flex: 3 1 45em;
+    flex: 3 1 30em;
 }
 aside {
-    flex: 1 1 20em;
+    flex: 1 0 15em;
     padding: 0.5em;
 }
 section{
     background-color: #ededed;
-    margin: 0em 0em 1em 1em;
-    padding: 1em;
+    margin-bottom: 1em;
+	margin-left: 0.75em;
+    padding: 0.5em 1em;
 	display: block;
 }
 figure {
@@ -56,12 +56,10 @@ a {
     text-decoration: none;
 }
 footer {
-    flex-basis: 60em;
-    flex-grow: 1;
-    flex-shrink: 0;
+    flex: 1 0 100%;
     border-top: 0.2em solid;
     border-color:#e8e8e8;
-    margin-top: 0.5em;
+    margin-top: 1em;
     padding-top: 0.5em;
 }
 
