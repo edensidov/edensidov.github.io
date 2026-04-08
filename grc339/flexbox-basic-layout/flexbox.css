@@ -5,6 +5,7 @@ body {
     color: #222;
     background-color: #fafafa;
     box-sizing: border-box;
+	font-size: 1.2em;
 }
 img {
     width: 100%;
@@ -23,7 +24,7 @@ header {
     font-size: 2em;
 }
 article {
-    flex: 3 1 38em;
+    flex: 3 1 45em;
 }
 aside {
     flex: 1 1 20em;
