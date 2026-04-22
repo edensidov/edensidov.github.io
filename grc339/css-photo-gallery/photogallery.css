@@ -38,6 +38,7 @@ figure{
     position: absolute;
     opacity: 0;
     transition: opacity 0.5s;
+	display: grid;
 }
 
 figcaption {
