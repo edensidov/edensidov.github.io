@@ -1,0 +1,168 @@
+/*CSS document*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+div.container {
+    max-width: 60em;
+    margin:auto;
+}
+
+h1 {
+    width: 10em;
+    margin: 1em;
+}
+
+nav ul{
+    margin: 1em 0.5em 1em 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    margin-bottom: 0.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(92,118,150);
+    font-size: 1.5em;
+    font-family: sans-serif;
+}
+
+p {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    font-size: 2em;
+    font-family: sans-serif;
+    margin: 0.5em;
+}
+
+section.mainstory a {
+    text-decoration: none;
+}
+
+section.mainstory a h2 {
+    font-family: serif;
+    color: rgb(85, 119, 153);
+    font-weight: bold;
+    font-size: 6em;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
+section.mainstory a p {
+    font-family: sans-serif;
+    color: rgb(0,0,0);
+    margin: 0rem 0.5rem 2rem 0.5rem;
+    line-height: 1.25em;
+}
+
+section.secondarystory a {
+    text-decoration: none;
+}
+
+section.secondarystory a h2 {
+    font-family: serif;
+    color: rgb(85, 119, 153);
+    font-weight: bold;
+    font-size: 3em;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+}
+
+section.secondarystory a p {
+    font-family: sans-serif;
+    color: rgb(0,0,0);
+    margin: 0rem 0.5rem 2rem 0.5rem;
+    line-height: 1.25em;
+}
+
+section.tertiarystory a {
+    text-decoration: none;
+}
+
+section.tertiarystory a h2 {
+    font-family: serif;
+    color: rgb(92,118,150);
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0.5rem 0.5rem 0rem 0.5rem;
+    border-top: 1.5px solid rgb(92,118,150);
+    padding-top: 0.25em;
+}
+
+section.tertiarystory a p {
+    font-family: sans-serif;
+    color: rgb(0,0,0);
+    margin: 0rem 0.5rem 2rem 0.5rem;
+    line-height: 1.25em;
+}
+
+figcaption{
+    font-family: sans-serif;
+    color: rgb(72,72,72);
+    font-size: 1em;
+    font-style: italic;
+    margin:0.5em 0.5em 0.2em 0.5em;
+    line-height: 1.25em;
+}
+
+article h2 {
+    margin-top: 1em;
+}
+
+article p{
+    margin-bottom: 1em;
+}
+
+aside{
+    background: rgb(204,206,255);
+    padding-bottom:2em;
+}
+
+aside p{
+    margin-bottom:4em;
+}
+
+footer {
+    background-color:rgb(92,118,150);
+    padding:2em;
+}
+
+footer p{
+   color: rgb(244,244,244);
+   padding: 1em 0.5em;
+   font-family: sans-serif;
+}
+
+@media screen and (min-width: 60em) {
+    nav ul li {
+            display: inline-block;
+            padding: 0em 2em 0em 0em;
+    }
+    nav ul {
+        margin-left:0em;
+    }
+    figcaption, h1{
+        margin-left:0em;
+    }
+    article h2, article p{
+        margin-left: 0em;
+    }
+    section.mainstory a h2, section.mainstory a p{
+        margin-left: 0em;
+    }
+    section.tertiarystory a h2, section.tertiarystory a p{
+        margin-left: 0em;
+    }
+    section.secondarystory a h2, section.secondarystory a p{
+        margin-left:0em;
+    }
+    section.tertiarystory a h2, section.tertiarystory a p{
+        margin-left:0em;
+    }
+}
+    
