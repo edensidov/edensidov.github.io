@@ -8,161 +8,142 @@ img {
 }
 
 div.container {
-    max-width: 60em;
-    margin:auto;
+    max-width: 40em;
+    margin: auto;
+}
+
+figure {
+    margin: 0em;
 }
 
 h1 {
-    width: 10em;
-    margin: 1em;
+    width: 8em;
+    margin: 1em 0em;
 }
 
-nav ul{
-    margin: 1em 0.5em 1em 0;
-}
-
-nav ul li{
-    list-style-type: none;
-    margin-bottom: 0.5em;
-}
-
-nav ul li a {
-    text-decoration: none;
+section.mainstory h2{
+    font-size: 3em;
+    color:rgb(95, 123, 160);
+    font-family: serif;
     font-weight: bold;
-    color: rgb(92,118,150);
+}
+
+section.secondarystory h2{
+    font-size: 2em;
+    color:rgb(95, 123, 160);
+    font-family: serif;
+    font-weight: bold;
+}
+
+section.tertiarystory h2{
     font-size: 1.5em;
+    color:rgb(95, 123, 160);
+    font-family: serif;
+    font-weight: bold;
+    border-top: 1.5px solid rgb(95, 123, 160);
+    padding: 0.5em 0 0.5em 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: rgb(91, 115, 146);
     font-family: sans-serif;
+    font-weight: 900;
+    font-size: 1.25em;
 }
 
 p {
-    text-decoration: none;
-    color: rgb(0,0,0);
-    font-size: 2em;
     font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    margin: 0em .5em 0em .5em;
+    line-height: 1.5em;
+    
+}
+
+nav ul{
+    list-style: none;
+}
+
+ul li{
+    margin-bottom: 0.5em;
+    line-height: 1.5em;
+}
+
+header {
+    padding: 0.5em;
+}
+
+
+section.tertiary {
+    border-top: 1.5px solid rgb(95, 125, 164);
+    margin: 0.5em;
+    padding-top: .5em;
+}
+
+section.tertiary h2,
+section.tertiary p {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+figcaption {
+    font-family: sans-serif;
+    color: rgb(128, 128, 128);
+    font-style: italic;
     margin: 0.5em;
 }
 
-section.mainstory a {
-    text-decoration: none;
-}
-
-section.mainstory a h2 {
-    font-family: serif;
-    color: rgb(85, 119, 153);
-    font-weight: bold;
-    font-size: 6em;
-    margin: 0.5rem 0.5rem 0rem 0.5rem;
-}
-
-section.mainstory a p {
-    font-family: sans-serif;
-    color: rgb(0,0,0);
-    margin: 0rem 0.5rem 2rem 0.5rem;
-    line-height: 1.25em;
-}
-
-section.secondarystory a {
-    text-decoration: none;
-}
-
-section.secondarystory a h2 {
-    font-family: serif;
-    color: rgb(85, 119, 153);
-    font-weight: bold;
-    font-size: 3em;
-    margin: 0.5rem 0.5rem 0rem 0.5rem;
-}
-
-section.secondarystory a p {
-    font-family: sans-serif;
-    color: rgb(0,0,0);
-    margin: 0rem 0.5rem 2rem 0.5rem;
-    line-height: 1.25em;
-}
-
-section.tertiarystory a {
-    text-decoration: none;
-}
-
-section.tertiarystory a h2 {
-    font-family: serif;
-    color: rgb(92,118,150);
-    font-weight: bold;
-    font-size: 2em;
-    margin: 0.5rem 0.5rem 0rem 0.5rem;
-    border-top: 1.5px solid rgb(92,118,150);
-    padding-top: 0.25em;
-}
-
-section.tertiarystory a p {
-    font-family: sans-serif;
-    color: rgb(0,0,0);
-    margin: 0rem 0.5rem 2rem 0.5rem;
-    line-height: 1.25em;
-}
-
-figcaption{
-    font-family: sans-serif;
-    color: rgb(72,72,72);
-    font-size: 1em;
-    font-style: italic;
-    margin:0.5em 0.5em 0.2em 0.5em;
-    line-height: 1.25em;
-}
-
 article h2 {
-    margin-top: 1em;
+    font-size: 3em;
+    color:rgb(95, 123, 160);
+    font-family: serif;
+    font-weight: bold;
+
 }
 
-article p{
+article p {
     margin-bottom: 1em;
 }
 
 aside{
-    background: rgb(204,206,255);
-    padding-bottom:2em;
+    background-color: rgb(197, 204, 255);
+    padding: 1em 0.5em;
 }
 
-aside p{
-    margin-bottom:4em;
+aside p {
+    margin-bottom: 3em;
 }
 
-footer {
-    background-color:rgb(92,118,150);
-    padding:2em;
+footer{
+    background-color: rgb(91, 115, 146);
+    padding: 1em;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 1em;
 }
 
-footer p{
-   color: rgb(244,244,244);
-   padding: 1em 0.5em;
-   font-family: sans-serif;
-}
+@media screen and (min-width: 40em) {
+	nav ul li{
+		display:inline;
+        margin-right: 1em;
+	}
 
-@media screen and (min-width: 60em) {
-    nav ul li {
-            display: inline-block;
-            padding: 0em 2em 0em 0em;
+    figcaption{
+        margin:.5em 0em 1em 0em;
     }
-    nav ul {
-        margin-left:0em;
+
+    h2{
+        margin:.2em 0em 0em 0em;
     }
-    figcaption, h1{
-        margin-left:0em;
+
+    p{
+        margin: 0 0 2em 0;
     }
-    article h2, article p{
-        margin-left: 0em;
-    }
-    section.mainstory a h2, section.mainstory a p{
-        margin-left: 0em;
-    }
-    section.tertiarystory a h2, section.tertiarystory a p{
-        margin-left: 0em;
-    }
-    section.secondarystory a h2, section.secondarystory a p{
-        margin-left:0em;
-    }
-    section.tertiarystory a h2, section.tertiarystory a p{
-        margin-left:0em;
-    }
+
+    section.tertiary {
+    margin: 0em;
 }
-    
+}
