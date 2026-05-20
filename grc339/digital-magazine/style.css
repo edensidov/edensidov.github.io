@@ -8,7 +8,9 @@ img {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "sigurd";
+    font-weight: 400;
+    font-style: normal;
 }
 
 div.container, div.home-container {
@@ -21,7 +23,7 @@ figure {
 }
 
 h1 {
-    width: 6em;
+    width: 20em;
     margin-top: 1em;
 }
 
@@ -30,9 +32,11 @@ h1, nav {
 }
 
 h2 {
-    font-family: serif;
+    font-family: "sigurd-semi";
+    font-weight: 900;
+    font-style: italic;
     font-weight: bold;
-    color:rgb(95, 123, 160);
+    color: #2C2C2C;
 }
 
 header, h2, p {
@@ -45,20 +49,24 @@ section {
 
 section.mainstory h2{
     font-size: 3em;
-    color:rgb(95, 123, 160);
-    font-family: serif;
-    font-weight: bold;
+    color:#2C2C2C;
+    font-family: "sigurd-semi";
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
 }
 
 section.secondarystory h2{
-    font-size: 2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 section.tertiarystory h2{
-    font-size: 1.5em;
-    color:rgb(95, 123, 160);
-    border-top: 1.5px solid rgb(95, 123, 160);
+    font-size: 1.3em;
+    color:#2C2C2C;
+    border-top: 2px solid #C7A49C;
     padding-top: 0.5em;
+    text-transform: uppercase;
 }
 
 a {
@@ -67,7 +75,7 @@ a {
 }
 
 nav a {
-    color: rgb(91, 115, 146);
+    color: #2C2C2C;
     font-family: sans-serif;
     font-weight: 900;
     font-size: 1.25em;
@@ -86,8 +94,12 @@ nav ul li{
 }
 
 nav ul li a{
-    font-weight: bold;
-    color: rgb(95, 125, 164);
+    color: #C7A49C;
+    font-family: "sigurd";
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.5em;
+    text-transform: uppercase;
 }
 
 figcaption {
@@ -101,6 +113,7 @@ article h2 {
     font-size: 3em;
     margin-top: 1em;
     margin-bottom: 0.5em;
+    text-transform: uppercase;
 }
 
 article p {
@@ -115,7 +128,7 @@ aside {
 
 footer{
     width: 100%;
-    background-color: rgb(91, 115, 146);
+    background-color: #C7A49C;
     padding: 1em 0;
     color: rgb(255, 255, 255);
     box-sizing: border-box;
