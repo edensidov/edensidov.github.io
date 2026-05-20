@@ -98,7 +98,7 @@ nav ul li a{
     font-family: "sigurd";
     font-weight: 800;
     font-style: normal;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-transform: uppercase;
 }
 
@@ -107,6 +107,8 @@ figcaption {
     color: rgb(120, 120, 121);
     font-style: italic;
     margin: 0.2rem 0.5rem 1rem;
+    padding-bottom: 1em;
+    
 }
 
 article h2 {
