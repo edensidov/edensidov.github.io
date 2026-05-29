@@ -8,7 +8,7 @@ img {
 }
 
 body {
-    font-family: "sigurd";
+    font-family: "sigurd", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -32,7 +32,7 @@ h1, nav {
 }
 
 h2 {
-    font-family: "sigurd-semi";
+    font-family: "sigurd-semi", sans-serif;
     font-weight: 900;
     font-style: italic;
     font-weight: bold;
@@ -50,7 +50,7 @@ section {
 section.mainstory h2{
     font-size: 3em;
     color:#2C2C2C;
-    font-family: "sigurd-semi";
+    font-family: "sigurd-semi", sans-serif; 
     font-weight: 600;
     font-style: italic;
     text-transform: uppercase;
@@ -95,10 +95,10 @@ nav ul li{
 
 nav ul li a{
     color: #C7A49C;
-    font-family: "sigurd";
+    font-family: "sigurd", sans-serif;
     font-weight: 800;
     font-style: normal;
-    font-size: 1em;
+    font-size: 1.25em;
     text-transform: uppercase;
 }
 
@@ -135,6 +135,126 @@ footer{
     color: rgb(255, 255, 255);
     box-sizing: border-box;
 }
+
+.photo-gallery input {
+    display: none;
+}
+
+.gallery {
+    position: relative;
+    height: 40em;
+}
+
+.gallery figure {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    opacity: 0;
+}
+
+.gallery figure img {
+    width: 100%;
+    height: 35em;
+    object-fit: cover;
+}
+
+#photo1:checked ~ .gallery figure:nth-of-type(1),
+#photo2:checked ~ .gallery figure:nth-of-type(2),
+#photo3:checked ~ .gallery figure:nth-of-type(3),
+#photo4:checked ~ .gallery figure:nth-of-type(4),
+#photo5:checked ~ .gallery figure:nth-of-type(5),
+#photo6:checked ~ .gallery figure:nth-of-type(6),
+#photo7:checked ~ .gallery figure:nth-of-type(7),
+#photo8:checked ~ .gallery figure:nth-of-type(8) {
+    opacity: 1;
+}
+
+.gallery-photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.25em;
+}
+
+.gallery-photos img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    display: block;
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #C7A49C;
+    border-radius: 4px;
+    margin-top: 0.25em;
+    margin-bottom: 1em;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #C7A49C;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    cursor: pointer;
+    font-family: "sigurd", sans-serif;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+}
+
+.newsletter h2 {
+    font-size: 4em;
+    font-family: "sigurd-semi", sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #2C2C2C;
+    margin-bottom: 0.5em;
+}
+
+.newsletter p {
+    margin-bottom: 2em;
+}
+
+.newsletter{
+    max-width: 48em;
+    margin: 3em auto;
+    padding: 2em;
+    background-color: #fff;
+}
+
+.newsletter ul {
+    list-style: none;
+    padding: 0;
+}
+
+.newsletter li {
+    margin-bottom: 1em;
+}
+
+.newsletter-page input {
+    width: 100%;
+    padding: 0.8em;
+    border: 1px solid #C7A49C;
+    margin-top: 0.3em;
+}
+
+.newsletter input[type="submit"],
+.newsletter button {
+    width: auto;
+    background-color: #C7A49C;
+    color: white;
+    border: none;
+    padding: 0.8em 1.5em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 
 @media only screen and (min-width: 40em) {
     div.container{
@@ -253,4 +373,8 @@ footer{
     section.secondarystory a p {
         flex: 0 0 4em; 
     }
+    
+    .gallery-photos {
+    grid-template-columns: repeat(4, 1fr);
+}
 }
