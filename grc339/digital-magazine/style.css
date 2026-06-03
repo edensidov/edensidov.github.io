@@ -18,9 +18,6 @@ div.container, div.home-container {
     margin: auto;
 }
 
-figure {
-    margin: 0em;
-}
 
 h1 {
     width: 20em;
@@ -178,6 +175,8 @@ footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.25em;
+
+    
 }
 
 .gallery-photos img {
@@ -185,6 +184,7 @@ footer{
     aspect-ratio: 1 / 1;
     object-fit: cover;
     display: block;
+    
 }
 
 form input[type="text"],
@@ -226,12 +226,12 @@ form ul {
     margin-bottom: 2em;
 }
 
-.newsletter{
+.newsletter {
     max-width: 48em;
-    margin: 3em auto;
+    margin-left: 0;
+    margin-right: auto;
     padding: 2em;
-    background-color: #fff;
-}
+}s
 
 .newsletter ul {
     list-style: none;
@@ -263,8 +263,7 @@ form ul {
 
 @media only screen and (min-width: 40em) {
     div.container{
-        min-width:60em;
-        display: grid;
+        margin: auto;
     }
     
     header h2 p {
@@ -291,9 +290,12 @@ form ul {
         grid-gap: 1em;
     }
 
-     div.container {
+    div.container{
         max-width: 60em;
-        padding: 0 auto;
+        padding: 0 1em;
+        display:grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 1em;
     }
 
     div.home-container aside {
@@ -378,10 +380,14 @@ form ul {
     
     .gallery-photos {
     grid-template-columns: repeat(4, 1fr);
-}
+    }
+
+ 
+
 @media screen and (prefers-color-scheme: dark) {
-   div.container, div.home-container {
+   div.container, div.home-container, div.newsletter {
         background-color: #2C2C2C;
+        max-width: 100%;
     }
     
     article.h2{
@@ -403,15 +409,15 @@ form ul {
 
     section.tertiarystory h2{
     border-top: 2px solid #FFFFFF;
+    color: #C7A49C;
     }
 
     footer {
     color: #2C2C2C;
-    width: 100%;
     }
-
-    .newsletter{
-    background-color: #2C2C2C;
+    
+    div.container h2 {
+        color: #C7A49C;
     }
 
     .newsletter h2, label {
