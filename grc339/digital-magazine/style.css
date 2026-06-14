@@ -175,16 +175,13 @@ footer{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 0.25em;
-
-    
+    margin-top: 1em;
 }
 
 .gallery-photos img {
     width: 100%;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    display: block;
-    
 }
 
 form input[type="text"],
@@ -361,7 +358,7 @@ form ul {
     }
 
     section.secondarystory a figure {
-       margin: 0;
+       margin:auto;
     }
 
     section.secondarystory img {
@@ -378,7 +375,9 @@ form ul {
     }
     
     .gallery-photos {
+    display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 0.25em;
     }
 }
 
