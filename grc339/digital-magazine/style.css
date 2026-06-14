@@ -361,8 +361,7 @@ form ul {
     }
 
     section.secondarystory a figure {
-        flex: 1 0 12em;
-        display: flex;
+       margin: 0;
     }
 
     section.secondarystory img {
@@ -386,7 +385,7 @@ form ul {
  
 
 @media screen and (prefers-color-scheme: dark) {
-   div.container, div.home-container, div.newsletter {
+   div.container, div.home-container, div.newsletter, body, main, section, article, aside {
         background-color: #2C2C2C;
         max-width: 100%;
     }
